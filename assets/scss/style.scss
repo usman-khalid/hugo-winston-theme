@@ -46,6 +46,10 @@ body {
   &.frame {
     min-height: 100vh;
     border: 18px solid var(--highlight-color);
+
+    @media (max-width: 767px) {
+      border: 0;
+    }
   }
 }
 

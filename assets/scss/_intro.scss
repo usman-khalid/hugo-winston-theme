@@ -18,15 +18,11 @@
   h2 {
     font-size: 50px;
     line-height: 56px;
-    @include breakpoint('small') {
-      width: 80%;
-    }
   }
   p {
     font-size: 20px;
     line-height: 26px;
     @include breakpoint('small') {
-      width: 80%;
       font-size: 22px;
       line-height: 32px;
     }
@@ -43,15 +39,19 @@
   img {
     max-width: 100%;
   }
-  // img {
-  //   margin-right: -30px;
-  //   width: 100vw;
-  //   vertical-align: bottom;
-  //   @include breakpoint('small') {
-  //     margin-left: -100px;
-  //     margin-right: -100px;
-  //     margin-bottom: 50px;
-  //     width: auto;
-  //   }
-  // }
+}
+
+.blog {
+  .intro {
+    h1 {
+      width: 100%;
+      font-size: 36px;
+      line-height: 48px;
+
+      @include breakpoint('small') {
+        font-size: 60px;
+        line-height: 72px;
+      }
+    }
+  }
 }
