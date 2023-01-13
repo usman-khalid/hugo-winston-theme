@@ -39,6 +39,12 @@
   img {
     max-width: 100%;
   }
+
+  a {
+    background: var(--highlight-color);
+    color: #fff;
+    padding: 0 2px;
+  }
 }
 
 .blog {
