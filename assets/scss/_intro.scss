@@ -45,6 +45,23 @@
     color: #fff;
     padding: 0 2px;
   }
+
+  .tags {
+    li {
+      margin-right: 10px;
+      display: inline-block;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      
+      @include breakpoint('small') {
+        margin-bottom: 0;
+      }
+
+       a{
+        padding: 5px 10px;
+       }
+    }
+  }
 }
 
 .blog {
